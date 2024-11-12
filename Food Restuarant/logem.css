@@ -1,0 +1,248 @@
+body3 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e63946;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('logo.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+section {
+    padding: 0px;
+}
+
+.pizza-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e63946;
+    color: white;
+    margin-top: 200px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-image {
+    width: 290px;
+    /* margin-bottom: 20px; */
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #e63946;
+    text-align: right;
+    text-decoration: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.google-login {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.google-login {
+    background-color: #4285F4;
+    color: white;
+}
+
+.register-link {
+    color: #e63946;
+    /* สีแดง */
+    text-decoration: none;
+    /* ลบขีดเส้นใต้ */
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    /* ขีดเส้นใต้เมื่อวางเมาส์ */
+}
+
+.register-page-container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.register-page-image {
+    width: 280px;
+    /* margin-bottom: 20px; */
+}
+
+.register-page-title {
+    margin-bottom: 15px;
+}
+
+.register-page-description {
+    margin-bottom: 10px;
+}
+
+.register-page-input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.register-page-input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.register-page-input-group input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-page-verify-otp {
+    width: 90px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.register-page-checkbox-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.register-page-checkbox-group input {
+    margin-right: 10px;
+}
+
+.register-page-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-page-social-login {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.register-page-google-login,
+.register-page-facebook-login {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-page-google-login {
+    background-color: #4285F4;
+    color: white;
+}
+
+.register-page-facebook-login {
+    background-color: #3b5998;
+    color: white;
+}

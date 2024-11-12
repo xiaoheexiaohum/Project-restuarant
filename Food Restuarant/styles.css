@@ -1,0 +1,331 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure body takes up the full viewport height */
+}
+
+header {
+    background: url('heeeee.jpg');
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    /* ให้บรรทัดใหม่เมื่อหน้าจอแคบ */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* ให้เมนูบรรทัดใหม่เมื่อแคบ */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border: solid green;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.recommend-item1,
+.recommend-item2,
+.recommend-item3 {
+    text-align: center;
+    height: 100px;
+    width: 350px;
+    margin-top: 20px;
+    /* Adjusting margin for each item */
+}
+
+.recommend-pic1 img,
+.recommend-pic2 img,
+.recommend-pic3 img {
+    width: 430px;
+    height: 550px;
+    margin-top: 30px;
+}
+
+.hero {
+    background: url('logo.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+section {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid purple;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pizza-item {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.pizza-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background: url('heeeee.jpg');
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.pizza-item {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    /* ใช้สีขาวเพื่อความเรียบง่าย */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    /* เพิ่มความโค้งให้ดูนุ่มนวล */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* เพิ่มเงาให้ดูมีมิติ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    /* เพิ่ม transition เพื่อการเคลื่อนไหวที่สวยงาม */
+    width: 300px;
+    /* ปรับขนาดความกว้างเป็น 400 พิกเซล */
+    height: auto;
+    /* ให้ความสูงปรับตามขนาดเนื้อหาภายใน */
+    cursor: pointer;
+    /* เปลี่ยนเป็น pointer เมื่อชี้เมนู */
+}
+
+.pizza-item:hover {
+    transform: translateY(-10px);
+    /* ยกเมนูขึ้นเล็กน้อยเมื่อชี้เมาส์ */
+    box-shadow: 0 8px 20px rgba(39, 39, 109, 0.2);
+    /* เพิ่มเงาให้เข้มขึ้นเมื่อชี้เมาส์ */
+    background-color: #f0f0f0;
+    /* เปลี่ยนสีพื้นหลังเล็กน้อยเมื่อชี้เมาส์ */
+}
+
+.pizza-img {
+    width: 80%;
+    /* รูปภาพขนาดใหญ่ขึ้นเล็กน้อย */
+    height: auto;
+    border-radius: 30px;
+    /* ปรับความโค้งของรูปภาพ */
+    margin-bottom: 15px;
+}
+
+.pizza-item h3 {
+    color: #e63946;
+    /* สีแดงที่เป็นธีมหลัก */
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: bold;
+    /* ทำให้ตัวอักษรหนาขึ้น */
+}
+
+.pizza-item p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    /* เพิ่มระยะห่างบรรทัดให้ดูอ่านง่ายขึ้น */
+    margin-bottom: 15px;
+}
+
+/* เพิ่มปุ่มสั่งซื้อในแต่ละเมนู */
+.pizza-item button {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pizza-item button:hover {
+    background-color: #d62828;
+    /* สีที่เข้มขึ้นเมื่อชี้เมาส์ */
+}
+
+/* เพิ่ม animation เมื่อกดปุ่ม */
+.pizza-item button:active {
+    transform: scale(0.95);
+    /* ลดขนาดเล็กน้อยเมื่อกดปุ่ม */
+}
+
+.price {
+    color: #e63946;
+    /* สีแดงเข้ากับธีม */
+    font-size: 18px;
+    /* ขนาดตัวอักษรของราคา */
+    font-weight: bold;
+    /* ทำให้ตัวอักษรหนา */
+    margin-top: 10px;
+    /* เพิ่มระยะห่างด้านบน */
+}
+
+#menu p {
+    font-size: 18px;
+    /* ปรับขนาดตัวอักษร */
+    color: #4e3939;
+    /* เปลี่ยนสีตัวอักษร */
+    font-family: 'Arial', sans-serif;
+    /* เปลี่ยนฟอนต์ */
+    line-height: 1.6;
+    /* เพิ่มระยะห่างระหว่างบรรทัด */
+    text-align: center;
+    /* จัดข้อความให้อยู่กึ่งกลาง */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    /* เพิ่มเงาให้ตัวอักษร */
+    margin-top: 10px;
+    /* เพิ่มระยะห่างด้านบน */
+    margin-bottom: 15px;
+    /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #d62828;
+}
+
+.menu-category {
+    display: none;
+    /* ซ่อนหมวดหมู่เมนูเริ่มต้น */
+    gap: 20px;
+    /* ระยะห่างระหว่างรายการ */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* ให้รายการบรรทัดใหม่เมื่อแคบ */
+}
+
+.menu-category.active {
+    display: flex;
+    /* แสดงหมวดหมู่เมนูที่ถูกเลือก */
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.order-item h3 {
+    margin-top: 0;
+}
+
+#order-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#order-history-table th,
+#order-history-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#order-history-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#order-history-table td ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+}

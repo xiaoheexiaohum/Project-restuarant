@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Website</title>
+    <link rel="stylesheet" href="logreg.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 id="title">Siam Delights Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#menu" id="menu-link">เมนู</a></li>
+                <li><a href="index.html#promotion" id="promo-link">โปรโมชั่น</a></li>
+                <div id="login-container">
+                    <a id="login-link" href="#">เข้าสู่ระบบ</a>
+                </div>
+                <li>
+                    <select id="language-selector">
+                        <option value="th">ไทย</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="login">
+        <div class="login-container">
+            <img src="logo.jpg" alt="logo Image" class="login-image">
+            <h2 id="Welcome">เข้าสู่ระบบ</h2>
+            <form id="login-form" action="/login" method="post">
+                <div class="input-group">
+                    <label for="phone-number" id="phone">เบอร์โทรศัพท์</label>
+                    <input type="tel" id="phone-number" name="phoneNumber" placeholder="08X-XXX-XXXX" required>
+                </div>
+                <div class="input-group">
+                    <label for="password" id="pass">รหัสผ่าน</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <a href="#" class="forgot-password" id="forget">ลืมรหัสผ่าน?</a>
+                <button type="submit" id="submit" class="login-button">เข้าสู่ระบบ</button>
+            </form>
+            <div class="social-login">
+                <p id="or">หรือ</p>
+                <button class="google-login" id="google">
+                    <a href="employee-logreg.html" target="_blank"> เข้าสู่ระบบพนักงาน</a>
+                </button>
+            </div>
+            <p id="regis">เพื่อให้คุณสั่งอาหารได้รวดเร็วขึ้น <a href="register.html"
+                    class="register-link">สมัครสมาชิกเลย</a></p>
+        </div>
+    </section>
+    <footer>
+        <p id="footer-contact">
+            ติดต่อเรา: <a href="SiamDelightsRestuarant@.com">SiamDelightsRestuarant@.com</a>
+        </p>
+    </footer>
+
+    <script src="logreg.js"></script>
+</body>
+
+</html>

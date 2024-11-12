@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siam Delights Website</title>
+    <link rel="stylesheet" href="logreg.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 id="title">Siam Delights Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#menu" id="menu-link">เมนู</a></li>
+                <li><a href="index.html#promotion" id="promo-link">โปรโมชั่น</a></li>
+                <li><a href="login.html" id="login-link">เข้าสู่ระบบ</a></li>
+                <li>
+                    <select id="language-selector">
+                        <option value="th">ไทย</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="register">
+        <div class="register-page-container">
+            <img src="logo.jpg" alt="logo Image" class="register-page-image">
+            <h2 class="register-page-title" id="regis1">สมัครสมาชิก Siam Delights Restaurant</h2>
+            <p class="register-page-description" id="text">
+                ข้อมูลส่วนตัวจะถูกบันทึกไว้และคุณสามารถดูรายการสั่งซื้อของคุณได้ตลอดเวลา</p>
+
+            <!--<div class="register-page-social-login">
+                <button class="google-login" id="google">
+                    <a href="employee_register.html" target="_blank"> สมัครสมาชิกพนักงาน</a>
+                </button>           
+             </div> -->
+
+
+            <!-- ฟอร์มสมัครสมาชิกทั่วไป -->
+            <form action="/register" method="post">
+                <div class="register-page-input-group">
+                    <label for="first-name" id="name">ชื่อ*</label>
+                    <input type="text" id="first-name" name="firstName" placeholder="" required>
+                </div>
+                <div class="register-page-input-group">
+                    <label for="last-name" id="surname">นามสกุล*</label>
+                    <input type="text" id="last-name" name="lastName" placeholder="" required>
+                </div>
+                <div class="register-page-input-group">
+                    <label for="email" id="mail">อีเมล*</label>
+                    <input type="email" id="email" name="email" placeholder="" required>
+                </div>
+                <div class="register-page-input-group">
+                    <label for="phone-number" id="phone">เบอร์โทรศัพท์*</label>
+                    <input type="tel" id="phone-number" name="phoneNumber" placeholder="08X-XXX-XXXX" required>
+                </div>
+                <div class="register-page-input-group">
+                    <label for="password" id="pass">รหัสผ่าน*</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="register-page-input-group">
+                    <label for="confirm-password" id="confirm">ยืนยันรหัสผ่าน*</label>
+                    <input type="password" id="confirm-password" name="confirmPassword" required>
+                </div>
+
+                <button type="submit" class="register-page-button">สมัครสมาชิก</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p id="footer-contact">
+            ติดต่อเรา: <a href="mailto:SiamDelightsRestuarant@.com">SiamDelightsRestuarant@.com</a>
+        </p>
+    </footer>
+
+    <script src="logreg.js"></script>
+</body>
+
+</html>

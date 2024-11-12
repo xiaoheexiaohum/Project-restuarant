@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siam Delights Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 id="title">Siam Delights Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu" id="menu-link">เมนู</a></li>
+                <li><a href="#recommend" id="recommend-link">เมนูแนะนำ</a></li>
+                <li><a href="order-history.html" id="order-history-link"
+                        style="display: none;">ดูรายการสั่งซื้อย้อนหลัง</a></li>
+                <li><a href="settings.html" id="settings-link">การตั้งค่าการส่ง</a></li>
+                <div id="login-container">
+                    <a id="login-link" href="login.html" href="loginem.html">เข้าสู่ระบบ</a>
+                </div>
+                <li>
+                    <select id="language-selector">
+                        <option value="th">ไทย</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 id="recommend-title">เมนูแนะนำ</h2>
+    <section id="recommend">
+        <div class="item1">
+            <div class="recommend-pic1">
+                <img src="recommend/ปูนิ่ม.jpg" alt="ปูนิ่มทอดกระเทียม">
+            </div>
+            <div class="recommend">
+                <h3 id="recommend-item-1-title">ปูนิ่มทอดกระเทียม</h3>
+            </div>
+        </div>
+
+        <div class="item2">
+            <div class="recommend-pic2">
+                <img src="recommend/ต้มยำกุ้ง.jpg" alt="ต้มยำกุ้งแม่น้ำ">
+            </div>
+            <div class="recommend-item2">
+                <h3 id="recommend-item-2-title">ต้มยำกุ้งแม่น้ำ</h3>
+            </div>
+        </div>
+
+        <div class="item3">
+            <div class="recommend-pic3">
+                <img src="recommend/ข้าวเหนียวมะม่วง.jpg" alt="ข้าวเหนียวมะม่วง">
+            </div>
+            <div class="recommend-item3">
+                <h3 id="recommend-item-3-title">ข้าวเหนียวมะม่วง</h3>
+            </div>
+        </div>
+    </section>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="ค้นหารายการเมนู...">
+    </div>
+    <h2 id="menu-title">เมนู</h2>
+    <div class="menu-buttons">
+        <button class="menu-btn" data-category="ต้ม">ต้ม</button>
+        <button class="menu-btn" data-category="ทอด">ทอด</button>
+        <button class="menu-btn" data-category="ยำ">ยำ</button>
+        <button class="menu-btn" data-category="ของหวาน">ของหวาน</button>
+        <button class="menu-btn" data-category="เครื่องดื่ม">เครื่องดื่ม</button>
+    </div>
+
+    <section id="menu">
+        <div class="menu-category ต้ม">
+            <div class="pizza-item">
+                <img src="menu image/ต้มยำกุ้ง.jpg" alt="ต้มยำกุ้งแม่น้ำ" class="pizza-img">
+                <h3 id="ต้ม-1-title">ต้มยำกุ้งแม่น้ำ</h3>
+                <div class="price">Price: 1,000 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ต้ม-1" data-name="ต้มยำกุ้งแม่น้ำ"
+                    data-price="1,000">สั่งซื้อ</button>
+            </div>
+
+            <div class="pizza-item">
+                <img src="menu image/ปลาเก๋า.jpg" alt="ต้มยำปลาเก๋า" class="pizza-img">
+                <h3 id="ต้ม-2-title">ต้มยำปลาเก๋า</h3>
+                <div class="price">Price: 700 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ต้ม-2" data-name="ต้มยำปลาเก๋า" data-price="700">สั่งซื้อ</button>
+            </div>
+
+            <div class="pizza-item">
+                <img src="menu image/กะพงต้มยำ.jpg" alt="ต้มยำปลากะพง" class="pizza-img">
+                <h3 id="ต้ม-3-title">ต้มยำปลากะพง</h3>
+                <div class="price">Price: 450 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ต้ม-3" data-name="ต้มยำปลากะพง" data-price="450">สั่งซื้อ</button>
+            </div>
+
+            <div class="pizza-item">
+                <img src="menu image/แกงส้ม.jpg" alt="แกงส้มกุ้งแม่น้ำ" class="pizza-img">
+                <h3 id="ต้ม-4-title">แกงส้มกุ้งแม่น้ำ</h3>
+                <div class="price">Price: 599 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ต้ม-4" data-name="แกงส้มกุ้งแม่น้ำ"
+                    data-price="599">สั่งซื้อ</button>
+            </div>
+
+            <div class="pizza-item">
+                <img src="menu image/แกงเรียง.jpg" alt="แกงเรียงกุ้งสด" class="pizza-img">
+                <h3 id="ต้ม-5-title">แกงเรียงกุ้งสด</h3>
+                <div class="price">Price: 350 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ต้ม-5" data-name="แกงเรียงกุ้งสด" data-price="350">สั่งซื้อ</button>
+            </div>
+
+            <div class="pizza-item">
+                <img src="menu image/ต้มข่า.jpg" alt="ต้มข่าทะเล" class="pizza-img">
+                <h3 id="ต้ม-6-title">ต้มข่าทะเล</h3>
+                <div class="price">Price: 500 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ต้ม-6" data-name="ต้มข่าทะเล" data-price="500">สั่งซื้อ</button>
+            </div>
+        </div>
+
+        <div class="menu-category ทอด">
+            <div class="pizza-item">
+                <img src="menu image/เปรี้ยวหวาน.jpg" alt="ผัดเปรี้ยวหวานทะเล" class="pizza-img">
+                <h3 id="ทอด-1-title">ผัดเปรี้ยวหวานทะเล</h3>
+                <div class="price">price: 350 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ทอด-1" data-name="ผัดเปรี้ยวหวานทะเล"
+                    data-price="350">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/กะพงทอด.jpg" alt="ปลากะพงทอดน้ำปลา" class="pizza-img">
+                <h3 id="ทอด-2-title">ปลากะพงทอดน้ำปลา</h3>
+                <div class="price">price: 400 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ทอด-2" data-name="ปลากะพงทอดน้ำปลา"
+                    data-price="400">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/ปูนิ่ม.jpg" alt="ปูนิ่มทอดกระเทียม" class="pizza-img">
+                <h3 id="ทอด-3-title">ปูนิ่มทอดกระเทียม</h3>
+                <div class="price">price: 700 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ทอด-3" data-name="ปูนิ่มทอดกระเทียม"
+                    data-price="700">สั่งซื้อ</button>
+            </div>
+        </div>
+
+        <div class="menu-category ยำ">
+            <div class="pizza-item">
+                <img src="menu image/พล่า.jpg" alt="พล่ากุ้งแม่น้ำ" class="pizza-img">
+                <h3 id="ยำ-1-title">พล่ากุ้งแม่น้ำ</h3>
+                <div class="price">Price: 600 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ยำ-1" data-name="พล่ากุ้งแม่น้ำ" data-price="600">สั่งซื้อ</button>
+            </div>
+
+            <div class="pizza-item">
+                <img src="menu image/ยำวุ้นเส้น.jpg" alt="ยำวุ้นเส้น" class="pizza-img">
+                <h3 id="ยำ-2-title">ยำวุ้นเส้น</h3>
+                <div class="price">Price: 250 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ยำ-2" data-name="ยำวุ้นเส้น" data-price="250">สั่งซื้อ</button>
+            </div>
+        </div>
+
+        <div class="menu-category ของหวาน">
+            <div class="pizza-item">
+                <img src="menu image/ข้าวเหนียวมะม่วง.jpg" alt="ข้าวเหนียวมะม่วง" class="pizza-img">
+                <h3 id="ของหวาน-1-title">ข้าวเหนียวมะม่วง</h3>
+                <div class="price">Price: 150 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ของหวาน-1" data-name="ข้าวเหนียวมะม่วง"
+                    data-price="150">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/ลอดช่อง.jpg" alt="ลอดช่อง" class="pizza-img">
+                <h3 id="ของหวาน-2-title">ลอดช่อง</h3>
+                <div class="price">Price: 100 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ของหวาน-2" data-name="ลอดช่องวัดเจษ"
+                    data-price="100">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/ข้าวเหนียวสังขยา.jpg" alt="ข้าวเหนียวสังขยา" class="pizza-img">
+                <h3 id="ของหวาน-3-title">ข้าวเหนียวสังขยา</h3>
+                <div class="price">Price: 120 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ของหวาน-3" data-name="ข้าวเหนียวสังขยา"
+                    data-price="120">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/เค้กนมสด.jpg" alt="เค้กนมสด" class="pizza-img">
+                <h3 id="ของหวาน-4-title">เค้กนมสด</h3>
+                <div class="price">Price: 200 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="ของหวาน-4" data-name="เค้กนมสด" data-price="200">สั่งซื้อ</button>
+            </div>
+        </div>
+
+        <div class="menu-category เครื่องดื่ม">
+            <div class="pizza-item">
+                <img src="menu image/มะพร้าวนมสด.jpg" alt="มะพร้าวปั่นนมสด" class="pizza-img">
+                <h3 id="เครื่องดื่ม-1-title">มะพร้าวปั่นนมสด</h3>
+                <div class="price">Price: 89 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="เครื่องดื่ม-1" data-name="มะพร้าวปั่นนมสด"
+                    data-price="89">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/berry2.png" alt="สมูทตี้มะม่วง" class="pizza-img">
+                <h3 id="เครื่องดื่ม-2-title">สมูทตี้มะม่วง</h3>
+                <div class="price">Price: 89 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="เครื่องดื่ม-2" data-name="สมูทตี้มะม่วง"
+                    data-price="89">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/berry3.png" alt="สมูทตี้สตรอเบอร์รี่" class="pizza-img">
+                <h3 id="เครื่องดื่ม-3-title">สมูทตี้สตรอเบอร์รี่</h3>
+                <div class="price">Price: 89 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="เครื่องดื่ม-3" data-name="สมูทตี้สตรอเบอร์รี่"
+                    data-price="89">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/coke.png" alt="โคล่า" class="pizza-img">
+                <h3 id="เครื่องดื่ม-4-title">โคล่า</h3>
+                <div class="price">Price: 45 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="เครื่องดื่ม-4" data-name="โคล่า" data-price="45">สั่งซื้อ</button>
+            </div>
+            <div class="pizza-item">
+                <img src="menu image/zero.png" alt="โคล่าซีโร่" class="pizza-img">
+                <h3 id="เครื่องดื่ม-5-title">โคล่าซีโร่</h3>
+                <div class="price">Price: 45 บาท</div>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="order-btn" data-id="เครื่องดื่ม-5" data-name="โคล่าซีโร่"
+                    data-price="45">สั่งซื้อ</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p id="footer-contact">
+            ติดต่อเรา: <a href="mailto:SiamDelightsRestuarant@.com">SiamDelightsRestuarant.com</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

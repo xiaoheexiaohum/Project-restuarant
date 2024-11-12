@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการการสั่งซื้อ - พนักงาน</title>
+    <link rel="stylesheet" href="employee_dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ระบบจัดการการสั่งซื้อ - พนักงาน</h1>
+        </div>
+        <button id="logout-button">ออกจากระบบ</button>
+
+    </header>
+
+    <section id="order-list">
+        <h2>รายการสั่งซื้อทั้งหมด</h2>
+        <table id="orders-table">
+            <thead>
+                <tr>
+                    <th>รหัสคำสั่งซื้อ</th>
+                    <th>ข้อมูลลูกค้า</th>
+                    <th>รายการสินค้า</th>
+                    <th>ยอดรวม</th>
+                    <th>สถานะ</th>
+                    <th>อัพเดตสถานะ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- แถวข้อมูลจะถูกเพิ่มโดย JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="employee_dashboard.js"></script>
+</body>
+</html>

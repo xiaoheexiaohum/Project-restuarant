@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login - Siam Delights Restaurant</title>
+    <link rel="stylesheet" href="employee-logreg.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 id="title">Siam Delights Restaurant - พนักงาน</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#menu" id="menu-link">เมนู</a></li>
+                <li><a href="index.html#promotion" id="promo-link">โปรโมชั่น</a></li>
+                <div id="login-container">
+                    <a id="login-link" href="#">เข้าสู่ระบบพนักงาน</a>
+                </div>
+                <li>
+                    <select id="language-selector">
+                        <option value="th">ไทย</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="employee-login">
+        <div class="login-container">
+            <img src="logo.jpg" alt="Pizza Image" class="login-image">
+            <h2 id="Welcome">เข้าสู่ระบบพนักงาน</h2>
+            <form id="employee-login-form" action="/employee/login" method="post">
+                <div class="input-group">
+                    <label for="employee-id" id="employee-id-label">รหัสพนักงาน</label>
+                    <input type="text" id="employee-id" name="employeeId" placeholder="รหัสพนักงาน" required>
+                </div>
+                <div class="input-group">
+                    <label for="password" id="pass">รหัสผ่าน</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="submit" class="login-button">เข้าสู่ระบบ</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p id="footer-contact">
+            ติดต่อเรา: <a href="mailto:SiamDelightsRestuarant@.com">SiamDelightsRestuarant@.com</a>
+        </p>
+    </footer>
+
+    <script src="employee-logreg.js"></script> <!-- สคริปต์สำหรับการเข้าสู่ระบบพนักงาน -->
+</body>
+
+</html>

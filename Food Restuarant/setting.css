@@ -1,0 +1,172 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure body takes up the full viewport height */
+}
+
+header {
+    background: url('heeeee.jpg');
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* ให้บรรทัดใหม่เมื่อหน้าจอแคบ */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* ให้เมนูบรรทัดใหม่เมื่อแคบ */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border: solid green;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.hero {
+    background: url('logo.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+section {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid purple;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background: url('heeeee.jpg');
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #d62828;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+    background-color: #c51b1b;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การตั้งค่าการส่ง - Siam Delights Restaurant</title>
+    <link rel="stylesheet" href="setting.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Siam Delights Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#menu">เมนู</a></li>
+                <li><a href="index.html#promotion">โปรโมชั่น</a></li>
+                <li><a href="order-history.html">ดูรายการสั่งซื้อย้อนหลัง</a></li>
+                <li><a href="settings.html" class="active">การตั้งค่าการจัดส่ง</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>การตั้งค่าการจัดส่ง</h2>
+        <form id="delivery-settings-form">
+            <div class="form-group">
+                <label for="delivery-option">วิธีการจัดส่ง:</label>
+                <select id="delivery-option" name="deliveryOption">
+                    <option value="standard">ส่งถึงบ้าน</option>
+                    <option value="express">ส่งด่วนถึงบ้าน</option>
+                    <option value="pickup">กินที่ร้าน</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="delivery-option">วิธีการชำระเงิน:</label>
+                <select id="delivery-option" name="deliveryOption">
+                    <option value="standard">ชำระเงินสด</option>
+                    <option value="express">พร้อมเพย์</option>
+                </select>
+            </div>
+            <button type="submit" id="save-settings-btn">บันทึกการตั้งค่า</button>
+        </form>
+    </main>
+    <footer>
+        <p>ติดต่อเรา: <a href="mailto:SiamDelightsRestuarant@.com">SiamDelightsRestuarant@.com</a></p>
+    </footer>
+
+    <script src="settings.js"></script> <!-- สำหรับจัดการการตั้งค่าการส่ง -->
+</body>
+
+</html>
